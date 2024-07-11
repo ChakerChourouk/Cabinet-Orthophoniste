@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cabinet.Controller.Main2Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a6c7" height="768.0" layoutX="-5.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" styleClass="Left_menu" width="310.0" />
+      <Text layoutX="73.0" layoutY="271.0" onMouseClicked="#switchToSceneProfile" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu" text="Création des profils et Connexion" />
+      <Text layoutX="73.0" layoutY="361.0" onMouseClicked="#switchToRd" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu" text="Planification d'un rendez-vous" />
+      <Text fill="#ffeeee" layoutX="73.0" layoutY="445.0" strokeType="INSIDE" strokeWidth="0.5" styleClass="Text_menu_acc" text="Création des tests et anamnéses" />
+      <Text layoutX="73.0" layoutY="531.0" onMouseClicked="#switchToVoirPatientsBo" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu" text="Bilans Orthophoniques" />
+      <Text layoutX="73.0" layoutY="610.0" onMouseClicked="#switchToMainPatient" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu" text="Consulations des dossiers" />
+      <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="27.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/user-solid%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="27.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/notes-medical-solid%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="27.0" layoutY="591.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/folder-solid%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="27.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/list-check-solid%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="27.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/calendar-days-solid%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="89.0" fitWidth="72.0" layoutX="20.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/logo-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a6c7" height="233.0" layoutX="484.0" layoutY="150.0" onMouseClicked="#switchToSceneTest" stroke="#0091cf" strokeType="INSIDE" styleClass="Main_containers" width="293.0" />
+      <Text layoutX="588.0" layoutY="321.0" onMouseClicked="#switchToSceneTest" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="G_text" text="TESTS" textAlignment="CENTER" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a6c7" height="233.0" layoutX="893.0" layoutY="150.0" onMouseClicked="#switchToSceneChoiceAnamnese" stroke="#0091cf" strokeType="INSIDE" styleClass="Main_containers" width="293.0" />
+      <Text layoutX="948.0" layoutY="320.0" onMouseClicked="#switchToSceneChoiceAnamnese" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="G_text" text="ANAMNESES" textAlignment="CENTER" />
+      <Text layoutX="105.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu" text="VerbaThérapie" />
+      <Text layoutX="105.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu" text="VerbaThérapie" />
+      <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="146.0" layoutY="175.0" onMouseClicked="#switchBackToHomePage" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/chart-simple-solid.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="129.0" layoutX="604.0" layoutY="197.0" onMouseClicked="#switchToSceneTest" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/search.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="129.0" layoutX="989.0" layoutY="197.0" onMouseClicked="#switchToSceneChoiceAnamnese" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/dossier.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="311.0" fitWidth="325.0" layoutX="660.0" layoutY="457.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/personal-consultation-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

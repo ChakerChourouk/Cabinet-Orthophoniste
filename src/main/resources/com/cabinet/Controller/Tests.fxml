@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cabinet.Controller.Main2Controller">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a6c7" height="768.0" layoutX="-5.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" styleClass="Left_menu" width="310.0" />
+        <Text layoutX="73.0" layoutY="271.0" onMouseClicked="#switchToSceneProfile" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu" text="Création des profils et Connexion" />
+        <Text layoutX="73.0" layoutY="361.0" onMouseClicked="#switchToRd" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu" text="Planification d'un rendez-vous" />
+        <Text fill="#ffeeee" layoutX="73.0" layoutY="445.0" strokeType="INSIDE" strokeWidth="0.5" styleClass="Text_menu_acc" text="Création des tests et anamnéses" />
+        <Text layoutX="73.0" layoutY="531.0" onMouseClicked="#switchToVoirPatientsBo" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu" text="Bilans Orthophoniques" />
+        <Text layoutX="73.0" layoutY="610.0" onMouseClicked="#switchToMainPatient" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu" text="Consulations des dossiers" />
+        <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="27.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+            <image>
+                <Image url="@pics/user-solid%20(1).png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="27.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+            <image>
+                <Image url="@pics/notes-medical-solid%20(1).png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="27.0" layoutY="591.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+            <image>
+                <Image url="@pics/folder-solid%20(1).png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="27.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+            <image>
+                <Image url="@pics/list-check-solid%20(1).png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="27.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+            <image>
+                <Image url="@pics/calendar-days-solid%20(2).png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="139.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+            <image>
+                <Image url="@pics/house-solid.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="89.0" fitWidth="72.0" layoutX="20.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+            <image>
+                <Image url="@pics/logo-removebg-preview.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="61.0" fitWidth="57.0" layoutX="340.0" layoutY="54.0" onMouseClicked="#switchToSceneAnamnese" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@pics/arrow2.png" />
+            </image>
+        </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a6c7" height="233.0" layoutX="470.0" layoutY="323.0" onMouseClicked="#SwitchToVoirTests" stroke="#0091cf" strokeType="INSIDE" styleClass="Main_containers" width="293.0" />
+      <Text layoutX="547.0" layoutY="489.0" onMouseClicked="#SwitchToVoirTests" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="G_text" text="Voir Tests" textAlignment="CENTER" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a6c7" height="233.0" layoutX="910.0" layoutY="323.0" onMouseClicked="#switchToSceneAjoutereTest" stroke="#0091cf" strokeType="INSIDE" styleClass="Main_containers" width="293.0" />
+      <Text layoutX="970.0" layoutY="490.0" onMouseClicked="#switchToSceneAjoutereTest" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="G_text" text="Ajouter Test" textAlignment="CENTER" />
+      <ImageView fitHeight="79.0" fitWidth="129.0" layoutX="1007.0" layoutY="365.0" onMouseClicked="#switchToSceneAjoutereTest" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/observer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="129.0" layoutX="577.0" layoutY="365.0" onMouseClicked="#SwitchToVoirTests" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/observer.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

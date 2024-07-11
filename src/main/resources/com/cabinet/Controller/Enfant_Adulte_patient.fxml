@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cabinet.Controller.Main2Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a6c7" height="768.0" layoutX="-5.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" styleClass="Left_menu" width="310.0" />
+      <Text layoutX="79.0" layoutY="361.0" onMouseClicked="#switchToRd" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu" text="Planification d'un rendez-vous" />
+      <Text layoutX="79.0" layoutY="445.0" onMouseClicked="#switchToSceneAnamnese" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu" text="Création des tests et anamnéses" />
+      <Text layoutX="79.0" layoutY="531.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu" text="Bilans Orthophoniques" />
+      <Text layoutX="105.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu" text="VerbaThérapie" />
+      <Text fill="WHITE" layoutX="79.0" layoutY="610.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu_acc" text="Consulations des dossiers" />
+      <ImageView fitHeight="106.0" fitWidth="79.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/doctor.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="27.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/user-solid%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="27.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/notes-medical-solid%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="27.0" layoutY="591.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/folder-solid%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="27.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/list-check-solid%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="27.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/calendar-days-solid%20(2).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="139.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/house-solid.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="89.0" fitWidth="72.0" layoutX="20.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/logo-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="79.0" layoutY="281.0" onMouseClicked="#switchToRd" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu" text="Création des profils et Connexion">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a6c7" height="233.0" layoutX="457.0" layoutY="168.0" onMouseClicked="#switchToAjouterEnfant" stroke="#0091cf" strokeType="INSIDE" styleClass="Main_containers" width="310.0" />
+      <Text layoutX="553.0" layoutY="334.0" onMouseClicked="#switchToAjouterEnfant" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="G_text" text="ENFANT" textAlignment="CENTER" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a6c7" height="233.0" layoutX="892.0" layoutY="165.0" onMouseClicked="#switchToAjouterAdulte" stroke="#0091cf" strokeType="INSIDE" styleClass="Main_containers" width="310.0" />
+      <Text layoutX="990.0" layoutY="334.0" onMouseClicked="#switchToAjouterAdulte" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="G_text" text="ADULTE" textAlignment="CENTER" />
+      <ImageView fitHeight="61.0" fitWidth="57.0" layoutX="339.0" layoutY="53.0" onMouseClicked="#switchToMainPatient" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/arrow2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="129.0" layoutX="1007.0" layoutY="222.0" onMouseClicked="#switchToAjouterAdulte" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/couple.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="129.0" layoutX="572.0" layoutY="222.0" onMouseClicked="#switchToAjouterEnfant" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/enfants.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

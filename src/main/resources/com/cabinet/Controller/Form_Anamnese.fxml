@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" styleClass="Main_containers" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cabinet.Controller.FormAnamnesesEnfantController">
+    <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#061f5f" height="646.0" layoutX="130.0" layoutY="40.0" stroke="#061f5f" strokeType="INSIDE" styleClass="Main_containers" width="850.0">
+        <effect>
+            <Lighting>
+                <bumpInput>
+                </bumpInput>
+                <light>
+
+                </light>
+            </Lighting>
+        </effect></Rectangle>
+    <Text layoutX="368.0" layoutY="161.0" styleClass="Text_form_princ" text="Ajouter Anamnése" wrappingWidth="551.8537788391113">
+        <font>
+            <Font size="24.0" />
+        </font></Text>
+
+    <TextField fx:id="nom" layoutX="248.0" layoutY="239.0" promptText="Nom Anamnése" styleClass="Form_elts" />
+    <Button id="AjouterButtonAdmin" fx:id="ajouterana" layoutX="674.0" layoutY="510.0" onAction="#switchToAjouterAnamnese" styleClass="Confirmation_button" text="Ajouter Anamnése">
+        <font>
+            <Font name="Arial Black" size="14.0" />
+        </font></Button>
+
+
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#055473" height="46.0" layoutX="255.0" layoutY="149.0" stroke="#00638d" strokeType="INSIDE" width="50.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f7ba3f" height="61.0" layoutX="222.0" layoutY="119.0" stroke="#f4bf4f" strokeType="INSIDE" width="65.0" />
+    <!-- <TextField fx:id="prenom" layoutX="248.0" layoutY="336.0" promptText="Enfant" styleClass="Form_elts" />-->
+    <ComboBox fx:id="categorieComboBox" layoutX="248.0" layoutY="366.0" prefWidth="150.0" promptText="Categorie" styleClass="Form_elts" />
+
+    <TextArea fx:id="QuestionLibre" layoutX="248.0" layoutY="431.0" prefHeight="32.0" prefWidth="426.0" promptText="Questions libres (une question par ligne)" styleClass="Form_elts" />
+    <AnchorPane layoutX="161.0" layoutY="48.0">
+        <children>
+            <ImageView fitHeight="61.0" fitWidth="57.0" layoutX="-14.0" layoutY="15.0" onMouseClicked="#switchBackToAnamnese" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@pics/arrow2.png" />
+                </image>
+            </ImageView>
+        </children>
+    </AnchorPane>
+    <AnchorPane layoutX="566.0" layoutY="208.0" minHeight="0.0" minWidth="0.0" prefHeight="292.0" prefWidth="234.0">
+        <children>
+            <ListView fx:id="questionsListView" layoutX="-33.0" layoutY="14.0" prefHeight="200.0" prefWidth="300.0" />
+        </children></AnchorPane>
+    <ComboBox fx:id="enfantComboBox" layoutX="248.0" layoutY="308.0" prefWidth="150.0" promptText="Enfant" styleClass="Form_elts" />
+    <Button id="AjouterButtonQuestion" fx:id="ajouterquestion" layoutX="257.0" layoutY="494.0" onAction="#ajouterQuestions" styleClass="Confirmation_button" text="Ajouter Question">
+        <font>
+            <Font name="Arial Black" size="14.0" />
+        </font>
+    </Button>
+</AnchorPane>

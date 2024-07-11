@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cabinet.Controller.VoirRdController">
+    <children>
+
+
+        <Text fill="#00638d" layoutX="402.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rendez Vous">
+            <font>
+                <Font name="System Bold Italic" size="45.0" />
+            </font>
+        </Text>
+
+        <ScrollPane fx:id="scrollpane" fitToWidth="true" layoutX="242.0" layoutY="80.0" prefHeight="655.0" prefWidth="751.0" styleClass="element_scrollpane">
+            <content>
+                <VBox fx:id="sallesBox" spacing="10" />
+            </content>
+        </ScrollPane>
+        <ImageView fitHeight="53.0" fitWidth="64.0" layoutX="105.0" layoutY="78.0" onMouseClicked="#switchBackToRD" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@pics/arrow2.png" />
+            </image>
+        </ImageView>
+
+    </children>
+</AnchorPane>

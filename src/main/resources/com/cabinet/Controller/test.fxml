@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cabinet.Controller.Main2Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03aed2" height="233.0" layoutX="689.0" layoutY="260.0" onMouseClicked="#switchToSceneAjouterCompte" stroke="BLACK" strokeType="INSIDE" styleClass="Main_containers" width="293.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03aed2" height="768.0" layoutX="-5.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" styleClass="Left_menu" width="283.0" />
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="27.0" layoutY="187.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.5" styleClass="Text_menu_acc" text="Création des profils et Connexion">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="44.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu" text="Planification d'un rendez-vous" />
+      <Text layoutX="38.0" layoutY="379.0" onMouseClicked="#switchToSceneAnamnese" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu" text="Création des tests et anamnéses" />
+      <Text layoutX="67.0" layoutY="478.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu" text="Bilans Orthophoniques" />
+      <Text layoutX="59.0" layoutY="566.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu" text="Consulations des dossiers" />
+      <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="125.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/home.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="106.0" fitWidth="79.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/doctor.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="105.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="orthopohonisete1" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#03aed2" height="233.0" layoutX="340.0" layoutY="260.0" stroke="BLACK" strokeType="INSIDE" styleClass="Main_containers" width="293.0" />
+      <Text layoutX="368.0" layoutY="416.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="G_text" text="VOIR PROFILS" />
+      <Text layoutX="707.0" layoutY="415.0" onMouseClicked="#switchToSceneAjouterCompte" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="G_text" text="AJOUTER PROFILE" />
+      <ImageView fitHeight="53.0" fitWidth="79.0" layoutX="460.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="79.0" layoutX="821.0" layoutY="287.0" onMouseClicked="#switchToSceneAjouterCompte" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/user.png" />
+         </image>
+      </ImageView>
+      <TextField layoutX="439.0" layoutY="153.0" styleClass="Form_elts" />
+   </children>
+</AnchorPane>

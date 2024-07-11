@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" styleClass="Main_containers" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cabinet.Controller.FormPatientAdultController">
+    <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#061f5f" height="694.0" layoutX="192.0" layoutY="39.0" stroke="#061f5f" strokeType="INSIDE" styleClass="Main_containers" width="987.0">
+        <effect>
+            <Lighting>
+                <bumpInput>
+                </bumpInput>
+                <light>
+                    <Light.Distant />
+                </light>
+            </Lighting>
+        </effect></Rectangle>
+    <Text layoutX="526.0" layoutY="139.0" styleClass="Text_form_princ" text="Ajouter un Patient ( Adulte )" wrappingWidth="551.8537788391113">
+        <font>
+            <Font size="24.0" />
+        </font></Text>
+
+    <TextField fx:id="nom" layoutX="454.0" layoutY="224.0" prefHeight="42.0" prefWidth="210.0" promptText="Nom" styleClass="Form_elts" />
+    <Button id="AjouterButtonAdmin" fx:id="ajouterortho" layoutX="699.0" layoutY="680.0" onAction="#switchToAjouterPatAdulte" styleClass="Confirmation_button" text="Ajouter">
+        <font>
+            <Font name="Arial Black" size="14.0" />
+        </font></Button>
+
+
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#055473" height="46.0" layoutX="319.0" layoutY="147.0" stroke="#00638d" strokeType="INSIDE" width="50.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f7ba3f" height="61.0" layoutX="286.0" layoutY="119.0" stroke="#f4bf4f" strokeType="INSIDE" width="65.0" />
+    <TextField fx:id="adresse" layoutX="843.0" layoutY="224.0" prefHeight="42.0" prefWidth="210.0" promptText="Adresse" styleClass="Form_elts" />
+    <TextField fx:id="prenom" layoutX="454.0" layoutY="345.0" minHeight="42.0" prefWidth="210.0" promptText="Prenom" styleClass="Form_elts" />
+    <TextField fx:id="naiss" layoutX="454.0" layoutY="471.0" minHeight="42.0" prefWidth="210.0" promptText="Lieu de Naissance" styleClass="Form_elts" />
+    <TextField fx:id="tel" layoutX="843.0" layoutY="602.0" prefHeight="42.0" prefWidth="210.0" promptText="Telephone" styleClass="Form_elts" />
+    <AnchorPane layoutX="161.0" layoutY="48.0" />
+    <TextField fx:id="prof" layoutX="843.0" layoutY="470.0" prefHeight="42.0" prefWidth="210.0" promptText="Profession" styleClass="Form_elts" />
+    <DatePicker fx:id="date" layoutX="454.0" layoutY="603.0" prefHeight="42.0" prefWidth="210.0" promptText="Date de naissance" />
+    <TextField fx:id="diplome" layoutX="843.0" layoutY="345.0" prefHeight="42.0" prefWidth="210.0" promptText="Diplome" styleClass="Form_elts" />
+    <ImageView fitHeight="61.0" fitWidth="57.0" layoutX="220.0" layoutY="69.0" onMouseClicked="#switchToTypePatient" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@pics/arrow2.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="406.0" layoutY="222.0" onMouseClicked="#switchToTypePatient" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@pics/carte-didentite.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="406.0" layoutY="345.0" onMouseClicked="#switchToTypePatient" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@pics/porte-nom.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="406.0" layoutY="471.0" onMouseClicked="#switchToTypePatient" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@pics/espace-reserve.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="406.0" layoutY="603.0" onMouseClicked="#switchToTypePatient" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@pics/date-limite.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="793.0" layoutY="222.0" onMouseClicked="#switchToTypePatient" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@pics/adresse-du-domicile.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="793.0" layoutY="345.0" onMouseClicked="#switchToTypePatient" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@pics/lobtention-du-diplome.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="793.0" layoutY="470.0" onMouseClicked="#switchToTypePatient" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@pics/opportunites-demploi.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="42.0" fitWidth="42.0" layoutX="793.0" layoutY="603.0" onMouseClicked="#switchToTypePatient" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@pics/telephone.png" />
+        </image>
+    </ImageView>
+
+</AnchorPane>

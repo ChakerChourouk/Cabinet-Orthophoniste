@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cabinet.Controller.Main2Controller">
+    <children>
+        <Text fill="#ffeeee" layoutX="73.0" layoutY="445.0" strokeType="INSIDE" strokeWidth="0.5" styleClass="Text_menu_acc" text="Création des tests et anamnéses" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a6c7" height="171.0" layoutX="193.0" layoutY="320.0" onMouseClicked="#switchToSceneTest" stroke="#0091cf" strokeType="INSIDE" styleClass="Main_containers" width="210.0" />
+        <Text layoutX="263.0" layoutY="416.0" strokeType="OUTSIDE" onMouseClicked="#switchToSceneQCM"  strokeWidth="0.0" styleClass="G_text" text="QCM" textAlignment="CENTER" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a6c7" height="171.0" layoutX="999.0" layoutY="320.0" onMouseClicked="#switchToSceneTest" stroke="#0091cf" strokeType="INSIDE" styleClass="Main_containers" width="210.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a6c7" height="171.0" layoutX="608.0" layoutY="320.0" onMouseClicked="#switchToSceneTest" stroke="#0091cf" strokeType="INSIDE" styleClass="Main_containers" width="210.0" />
+        <Text layoutX="685.0" layoutY="416.0" onMouseClicked="#switchToSceneQCL" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="G_text" text="QCL" textAlignment="CENTER" />
+      <Text layoutX="1072.0" layoutY="416.0" onMouseClicked="#switchToSceneQCU" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="G_text" text="QCU" textAlignment="CENTER" />
+    </children>
+</AnchorPane>

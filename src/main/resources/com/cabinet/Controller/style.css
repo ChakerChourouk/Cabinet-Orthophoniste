@@ -1,0 +1,159 @@
+.anchor-pane {
+    -fx-background-color: #ffffff; /* Replace with your chosen color */
+}
+.Left_menu{
+    -fx-fill : #03aed2;
+    -fx-border-radius : 10px;
+    -fx-background-radius : 10px;
+}
+.Text_menu{
+    -fx-font-family: "Poppins";
+    -fx-font-size: 14px;
+}
+.Text_menu_acc{
+    -fx-font-family: "Poppins";
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+
+    -fx-stroke-color:black;
+}
+.Text_menu:hover{
+    -fx-fill: grey;
+}
+.Text_menu_acc:hover{
+    -fx-fill: silver;
+}
+.icon{-fx-fill :  black;}
+.icon:hover{
+-fx-fill : grey;
+}
+.G_text{
+    fx-font-family: "Poppins";
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box,silver, 2, 0, 0, 0);
+}
+.G_text_sec{
+    fx-font-family: "Poppins";
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box,silver, 2, 0, 0, 0);
+}
+.Main_containers{
+    -fx-fill:#03AED2;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 5, 5);
+    -fx-border-radius : 20%;
+
+
+}
+.Text_form{
+    -fx-font-family: "Poppins";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: silver;
+}
+.Text_form_princ{
+    fx-font-family: "Poppins";
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: silver;
+}
+.Form_elts{
+    -fx-fill:white;
+    -fx-background-color:#055473;
+    -fx-font-size: 16px;
+}
+.Confirmation_button{
+-fx-background-color :#f7ba3f;
+-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 5, 0, 2, 2);
+}
+.my-alert {
+    -fx-background-color: linear-gradient(to bottom, #4F4F4F, #2E2E2E);
+}
+
+/* Style pour le panneau de l'en-tête */
+.my-alert .header-panel {
+    -fx-background-color: #ac9c42;
+    -fx-text-fill: #2E2E2E;
+}
+
+/* Style pour le texte de l'en-tête */
+.my-alert .header-panel .label {
+    -fx-text-fill: #ffffff;
+}
+
+/* Style pour le panneau du contenu */
+.my-alert .content.label {
+    -fx-text-fill: #FFD700;
+}
+
+
+.my-alert .button {
+    -fx-background-color: #FFD700;
+    -fx-text-fill: #2E2E2E;
+}
+
+.my-alert .button:hover {
+    -fx-background-color: #555033;
+    -fx-text-fill: #FFD700;
+}
+
+
+.element_scrollpane {
+    -fx-background-color: #f2f2f2; /* Light gray background */
+    -fx-background-insets: 0; /* Remove any insets */
+    -fx-padding: 10px; /* Add some padding */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 2); /* Add a subtle drop shadow */
+}
+
+/* Style for the scroll bars */
+.element_scrollpane {
+    -fx-background-color: #f2f2f2; /* Couleur de fond */
+    -fx-background-insets: 0; /* Supprimer les marges internes */
+    -fx-padding: 10px; /* Ajouter un peu de rembourrage */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 2); /* Ajouter une ombre subtile */
+}
+
+.element_scrollpane:hover {
+    -fx-background-color: #ffffff; /* Changement de couleur au survol */
+    -fx-transition: background-color 0.3s ease; /* Animation de transition */
+}
+
+.element_scrollpane .scroll-bar {
+    -fx-background-color: transparent; /* Couleur de fond transparente */
+    -fx-transition: background-color 0.3s ease; /* Animation de transition */
+}
+
+.element_scrollpane .scroll-bar-thumb {
+    -fx-background-color: #8f8f8f; /* Couleur de la barre de défilement */
+    -fx-transition: background-color 0.3s ease; /* Animation de transition */
+}
+
+.element_scrollpane .scroll-bar:horizontal .increment-button,
+.element_scrollpane .scroll-bar:horizontal .decrement-button,
+.element_scrollpane .scroll-bar:vertical .increment-button,
+.element_scrollpane .scroll-bar:vertical .decrement-button {
+    -fx-background-color: #8f8f8f; /* Couleur des boutons de défilement */
+    -fx-padding: 5px; /* Ajouter du rembourrage */
+    -fx-transition: background-color 0.3s ease; /* Animation de transition */
+}
+
+/* Style pour le texte dans le ScrollPane */
+.scroll_text {
+    -fx-font-family: "Roboto";
+    -fx-font-size: 14pt;
+}
+
+.label-current-time {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF; /* Initial text color */
+}
+
+.label-current-time.blink {
+    -fx-text-fill: #FF0000; /* Color for blinking animation */
+    -fx-border-color: #FF0000; /* Border color for blinking animation */
+    -fx-border-width: 3px;
+    -fx-border-radius: 10px;
+    -fx-padding: 5px;
+}

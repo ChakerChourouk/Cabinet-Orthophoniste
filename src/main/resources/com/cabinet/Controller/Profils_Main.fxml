@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cabinet.Controller.Main2Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a6c7" height="233.0" layoutX="869.0" layoutY="165.0" onMouseClicked="#switchToSceneAjouterCompte" stroke="#0091cf" strokeType="INSIDE" styleClass="Main_containers" width="293.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a6c7" height="768.0" layoutX="-5.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" styleClass="Left_menu" width="310.0" />
+      <Text layoutX="73.0" layoutY="361.0" onMouseClicked="#switchToRd" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu" text="Planification d'un rendez-vous" />
+      <Text layoutX="73.0" layoutY="445.0" onMouseClicked="#switchToSceneAnamnese" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu" text="Création des tests et anamnéses" />
+      <Text layoutX="73.0" layoutY="531.0" onMouseClicked="#switchToVoirPatientsBo" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu" text="Bilans Orthophoniques" />
+      <Text layoutX="73.0" layoutY="610.0" onMouseClicked="#switchToMainPatient" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu" text="Consulations des dossiers" />
+      <Text layoutX="105.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu" text="VerbaThérapie" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00a6c7" height="233.0" layoutX="433.0" layoutY="165.0" onMouseClicked="#SwitchToVoirProfils" stroke="#0091cf" strokeType="INSIDE" styleClass="Main_containers" width="293.0" />
+      <Text layoutX="480.0" layoutY="333.0" onMouseClicked="#SwitchToVoirProfils" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="G_text" text="VOIR PROFILS" textAlignment="CENTER" />
+      <Text layoutX="887.0" layoutY="334.0" onMouseClicked="#switchToSceneAjouterCompte" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="G_text" text="AJOUTER PROFILE" textAlignment="CENTER" />
+      <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="27.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/user-solid%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="27.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/notes-medical-solid%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="27.0" layoutY="591.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/folder-solid%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="27.0" layoutY="512.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/list-check-solid%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="27.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/calendar-days-solid%20(2).png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="69.0" layoutY="271.0"  stroke="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Text_menu_acc" text="Création des profils et Connexion">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="311.0" fitWidth="325.0" layoutX="650.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/4826435-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="129.0" layoutX="990.0" layoutY="212.0" onMouseClicked="#switchToSceneAjouterCompte" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/utilisateur.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="79.0" fitWidth="129.0" layoutX="540.0" layoutY="212.0" onMouseClicked="#SwitchToVoirProfils" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/renseignements-personnels.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="89.0" fitWidth="72.0" layoutX="20.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/logo-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="44.0" fitWidth="27.0" layoutX="136.0" layoutY="165.0" onMouseClicked="#switchBackToHomePage" pickOnBounds="true" preserveRatio="true" styleClass="icon">
+         <image>
+            <Image url="@pics/chart-simple-solid.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
